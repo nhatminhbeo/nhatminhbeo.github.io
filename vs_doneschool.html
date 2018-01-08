@@ -1,5 +1,13 @@
-<body background-color="black">
-<font color="white"><center><h1>Done School</h1></center></font>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body style="background-color:black">
+  <div style="position:absolute; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+    <font style="color:white">
+      <h1 id="donetext">Done School</h1>
+    </font>
+  </div>
 </body>
 
 <script type="text/javascript">
@@ -66,5 +74,5 @@ function getAllUrlParams(url) {
 
   return obj;
 }
-
+$("#donetext").text("done school " + getAllUrlParams().school)
 </script>
